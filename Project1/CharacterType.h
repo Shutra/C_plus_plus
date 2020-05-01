@@ -12,13 +12,15 @@ class CharacterType
 {
 public:
 	// Default constructor
-	CharacterType() { id = 0; }
+	CharacterType();
 
 	// Overloaded constructor
-	CharacterType(std::string& newFirstName, std::string& newLastName, int newId);
+	CharacterType(const std::string& newFirstName,
+		const std::string& newLastName,const int newId);
 
 	// setCharacterInfo
-	void setCharacterInfo(std::string& newFirstName, std::string& newLastName, int newId);
+	void setCharacterInfo(const std::string& newFirstName, 
+		const std::string& newLastName, const int newId);
 
 	// getFirstName
 	std::string getFirstName() const;
